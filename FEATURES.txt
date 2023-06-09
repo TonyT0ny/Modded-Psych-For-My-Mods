@@ -1,0 +1,17 @@
+From PRs / Engines / Moddifiers
+
+Fix Sustain Clipping - NeeEoo - https://github.com/ShadowMario/FNF-PsychEngine/pull/12188
+Json Functionality In Lua - CaptainBaldi - https://github.com/ShadowMario/FNF-PsychEngine/pull/12081
+Crash Protection + File Tracing - Itz-Miles - https://github.com/ShadowMario/FNF-PsychEngine/pull/11811
+Legacy Chart Support - BeastlyGhost - https://github.com/ShadowMario/FNF-PsychEngine/pull/11116
+Language Support - sayofhelor - https://github.com/sayofthelor/lore-engine/commit/21224892e0a4c550a93b64cbf84f4bb3c1cf59db
+Automatic Ghost Tapping - KutikiPlayz - https://github.com/KutikiPlayz/FNF-PsychEngine/commit/b11842b33acbb2bbcc80ef5c994d035dc7d6c7cb
+Player & CPU Lighting - Wither362 - https://github.com/Theoyeah/Theoyeah-Engine/pull/245
+Use of Shader (no need to port to Flixel) - sayofthelor - https://github.com/sayofthelor/flixel-shadertoy-shader-lr/tree/master
+In-Game Crash Handler - sayofthelor - https://github.com/sayofthelor/lore-engine/commit/ca03d22b044a2d8e9828ad1cf73f47c7dcf8265b
+
+Other
+
+Note Camera
+Zoom on Main Menu + Title State
+Removed return hideChars.split(path).join("").toLowerCase(); shit (CUSTOMIZABLE SONG NAMES!!)

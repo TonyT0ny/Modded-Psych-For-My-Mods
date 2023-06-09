@@ -4,19 +4,18 @@ Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
 
-open up a Command Prompt/PowerShell or Terminal, type `haxelib install hmm`
+Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
 
-after it finishes, simply type `haxelib run hmm install` in order to install all the needed libraries for *Psych Engine!*
+To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit` on a Command prompt/PowerShell
 
-## Customization:
+...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
 
-if you wish to disable things like *Lua Scripts* or *Video Cutscenes*, you can read over to `Project.xml`
 
-inside `Project.xml`, you will find several variables to customize Psych Engine to your liking
+If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
 
-to start you off, disabling Videos should be simple, simply Delete the line `"VIDEOS_ALLOWED"` or comment it out by wrapping the line in XML-like comments, like this `<!-- YOUR_LINE_HERE -->`
+If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
 
-same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, this and other customization options are all available within the `Project.xml` file
+otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 
 ## Credits:
 * Shadow Mario - Programmer
@@ -25,7 +24,7 @@ same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, 
 
 ### Special Thanks
 * bbpanzu - Ex-Programmer
-* Yoshubs - New Input System
+* shubs - New Input System
 * SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
 * KadeDev - Fixed some cool stuff on Chart Editor and other PRs
 * iFlicky - Composer of Psync and Tea Time, also made the Dialogue Sounds
