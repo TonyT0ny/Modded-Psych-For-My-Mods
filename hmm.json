@@ -6,29 +6,54 @@
         "version": "8.0.1"
       },
       {
+        "name": "lime-samples",
+        "type": "haxelib",
+        "version": "7.0.0"
+      },
+      {
         "name": "openfl",
         "type": "haxelib",
-        "version": "9.1.0"
+        "version": "9.2.1"
       },
       {
         "name": "flixel",
         "type": "haxelib",
-        "version": "4.11.0"
+        "version": "5.2.2"
       },
       {
         "name": "flixel-addons",
         "type": "haxelib",
-        "version": "2.11.0"
+        "version": "3.0.2"
+      },
+      {
+        "name": "flixel-demos",
+        "type": "haxelib",
+        "version": "2.9.0"
+      },
+      {
+        "name": "flixel-templates",
+        "type": "haxelib",
+        "version": "2.6.6"
       },
       {
         "name": "flixel-tools",
         "type": "haxelib",
-        "version": null
+        "version": "1.5.1"
       },
       {
         "name": "flixel-ui",
         "type": "haxelib",
-        "version": null
+        "version": "2.5.0"
+      },
+      {
+        "name": "flxanimate",
+        "type": "haxelib",
+        "version": "3.0.4"
+      },
+      {
+        "name": "hscript",
+        "type": "haxelib",
+        "version": "2.5.0"
       },
       {
         "name": "hxcpp",
@@ -36,41 +61,9 @@
         "version": "4.2.1"
       },
       {
-        "name": "tjson",
-        "type": "haxelib",
-        "version": null
-      },
-      {
-        "name": "hxjsonast",
-        "type": "haxelib",
-        "version": null
-      },
-      {
         "name": "hxCodec",
         "type": "haxelib",
         "version": "2.5.1"
-      },
-      {
-        "name": "hscript",
-        "type": "haxelib",
-        "version": null
-      },
-      {
-        "name": "hxcpp-debug-server",
-        "type": "haxelib",
-        "version": null
-      },
-      {
-        "name": "actuate",
-        "type": "haxelib",
-        "version": null
-      },
-      {
-        "name": "discord_rpc",
-        "type": "git",
-        "dir": null,
-        "ref": "master",
-        "url": "https://github.com/Aidan63/linc_discord-rpc"
       },
       {
         "name": "hscript-ex",
@@ -80,18 +73,18 @@
         "url": "https://github.com/ianharrigan/hscript-ex"
       },
       {
+        "name": "discord_rpc",
+        "type": "git",
+        "dir": null,
+        "ref": "master",
+        "url": "https://github.com/Aidan63/linc_discord-rpc.git"
+      },
+      {
         "name": "linc_luajit",
         "type": "git",
         "dir": null,
         "ref": "master",
-        "url": "https://github.com/nebulazorua/linc_luajit"
-      },
-      {
-        "name": "flixel-shadertoy-shader-lr",
-        "type": "git",
-        "dir": null,
-        "ref": "master",
-        "url": "https://github.com/sayofthelor/flixel-shadertoy-shader-lr/"
+        "url": "https://github.com/superpowers04/linc_luajit.git"
       }
     ]
   }

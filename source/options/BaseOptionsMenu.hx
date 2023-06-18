@@ -58,7 +58,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFFea71fd;
 		bg.screenCenter();
-		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
 
 		// avoids lagspikes while scrolling through menus!
@@ -91,6 +91,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		{
 			var optionText:Alphabet = new Alphabet(0, 70 * i, optionsArray[i].name, false, false);
 			optionText.isMenuItem = true;
+			optionText.itemType = ClientPrefs.data.itemType;
 			optionText.x += 300;
 			/*optionText.forceX = 300;
 			optionText.yMult = 90;*/

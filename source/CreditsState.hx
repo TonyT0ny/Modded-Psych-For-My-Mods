@@ -113,6 +113,7 @@ class CreditsState extends MusicBeatState
 		{
 			var isSelectable:Bool = !unselectableCheck(i);
 			var optionText:Alphabet = new Alphabet(0, 70 * i, creditsStuff[i][0], !isSelectable, false);
+			optionText.itemType = ClientPrefs.data.itemType;
 			optionText.isMenuItem = true;
 			optionText.screenCenter(X);
 			optionText.yAdd -= 70;

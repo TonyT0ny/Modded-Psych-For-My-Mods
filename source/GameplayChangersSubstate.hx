@@ -127,6 +127,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		{
 			var optionText:Alphabet = new Alphabet(0, 70 * i, optionsArray[i].name, true, false, 0.05, 0.8);
 			optionText.isMenuItem = true;
+			optionText.itemType = ClientPrefs.data.itemType;
 			optionText.x += 300;
 			/*optionText.forceX = 300;
 			optionText.yMult = 90;*/
@@ -459,11 +460,11 @@ class GameplayOption
 
 	public function getValue():Dynamic
 	{
-		return ClientPrefs.gameplaySettings.get(variable);
+		return ClientPrefs.data.gameplaySettings.get(variable);
 	}
 	public function setValue(value:Dynamic)
 	{
-		ClientPrefs.gameplaySettings.set(variable, value);
+		ClientPrefs.data.gameplaySettings.set(variable, value);
 	}
 
 	public function setChild(child:Alphabet)
