@@ -116,7 +116,7 @@ class Paths
 		if (currentLevel != null)
 		{
 			var levelPath:String = '';
-			levelPath = getLibraryPathForce(key, currentLevel);
+			levelPath = getLibraryPathForce(file, currentLevel);
 			if (OpenFlAssets.exists(levelPath, type))
 				return levelPath;
 		}

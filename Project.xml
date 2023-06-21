@@ -59,8 +59,9 @@
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="CRASH_HANDLER" if="desktop release" />
 
-	<!-- <assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
+	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
 	<assets path="assets/preload" rename="assets" exclude="*.mp3"  unless="web"/>
+<!-- 
 	<section if="TITLE_SCREEN_EASTER_EGG">
 		<assets path="assets/secrets" rename="assets" exclude="*.ogg" if="web"/>
 		<assets path="assets/secrets" rename="assets" exclude="*.mp3"  unless="web"/>
@@ -69,12 +70,16 @@
 	<!-- DONT ENABLE THIS -->
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
 
-
-	<!-- Codemane -->
 	<define name="PRELOAD_ALL" unless="web" />
 	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
-	<library name="assets"    preload="true"  if="PRELOAD_ALL"/>
-	<library name="assets"    preload="false" if="NO_PRELOAD_ALL" />
+	
+	<section if="PRELOAD_ALL">
+		<library name="week_assets"         preload="true" />
+	</section>
+	
+	<section if="NO_PRELOAD_ALL">
+		<library name="week_assets"         preload="false" />
+	</section>
 	
 	<assets path="assets/week_assets"         library="week_assets"         exclude="*.ogg" if="web"/>
 	<assets path="assets/week_assets"         library="week_assets"         exclude="*.mp3" unless="web"/>
