@@ -40,20 +40,19 @@ class NoteSplash extends FlxSprite
 		colorSwap.hue = hueColor;
 		colorSwap.saturation = satColor;
 		colorSwap.brightness = brtColor;
-		offset.set(10, 10);
+		offset.set(10, -5);
 
-		var animNum:Int = FlxG.random.int(1, 2);
-		animation.play('note' + note + '-' + animNum, true);
-		if(animation.curAnim != null)animation.curAnim.frameRate = 24 + FlxG.random.int(-2, 2);
+		animation.play('note' + note + '-' + 2, true);
+		if(animation.curAnim != null)animation.curAnim.frameRate = 24;
 	}
 
 	function loadAnims(skin:String) {
 		frames = Paths.getSparrowAtlas(skin);
 		for (i in 1...3) {
-			animation.addByPrefix("note1-" + i, "note impact " + i + "  blue", 24, false);
-			animation.addByPrefix("note2-" + i, "note impact " + i + " green", 24, false);
-			animation.addByPrefix("note0-" + i, "note impact " + i + " purple", 24, false);
-			animation.addByPrefix("note3-" + i, "note impact " + i + " red", 24, false);
+			animation.addByPrefix("note1-" + i, "note impact 2 blue", 24, false); //i have no idea
+			animation.addByPrefix("note2-" + i, "note impact 2 green", 24, false);
+			animation.addByPrefix("note0-" + i, "note impact 2 purple", 24, false);
+			animation.addByPrefix("note3-" + i, "note impact 2 red", 24, false);
 		}
 	}
 

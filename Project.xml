@@ -74,15 +74,15 @@
 	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
 	
 	<section if="PRELOAD_ALL">
-		<library name="week_assets"         preload="true" />
+		<library name="week_assets"   preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
-		<library name="week_assets"         preload="false" />
+		<library name="week_assets"   preload="false" />
 	</section>
 	
-	<assets path="assets/week_assets"         library="week_assets"         exclude="*.ogg" if="web"/>
-	<assets path="assets/week_assets"         library="week_assets"         exclude="*.mp3" unless="web"/>
+	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.ogg" if="web"/>
+	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.mp3" unless="web"/>
 	
 	<section if="MODS_ALLOWED">
 		<assets path='mods' embed='false'/>
@@ -164,13 +164,14 @@
 	<!--Used for Izzy Engine's crash handler-->
 	<haxedef name="HXCPP_CHECK_POINTER" if="CRASH_HANDLER" />
 	<haxedef name="HXCPP_STACK_LINE" if="CRASH_HANDLER" />
+	<haxedef name="HXCPP_STACK_TRACE" if="CRASH_HANDLER" />
 
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 	
-	<icon path="assets/data/compData/icon16.png" size='16'/>
-	<icon path="assets/data/compData/icon32.png" size='32'/>
-	<icon path="assets/data/compData/icon64.png" size='64'/>
-	<icon path="assets/data/compData/iconOG.png" />
+	<icon path="assets/preload/data/compData/icon16.png" size='16'/>
+	<icon path="assets/preload/data/compData/icon32.png" size='32'/>
+	<icon path="assets/preload/data/compData/icon64.png" size='64'/>
+	<icon path="assets/preload/data/compData/iconOG.png" />
 </project>
